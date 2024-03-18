@@ -37,4 +37,8 @@ export class AppComponent {
   valueRed() {
     this.inputText = 'Vermelho';
   }
+
+  handleInputKeyup(event: any) {
+    console.log(event);
+  }
 }
