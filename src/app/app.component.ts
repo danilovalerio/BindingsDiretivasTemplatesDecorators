@@ -13,4 +13,28 @@ export class AppComponent {
   inputType = 'text';
 
   isDisable = true;
+
+  enableInput() {
+    this.isDisable = false;
+  }
+
+  disableInput() {
+    this.isDisable = true;
+  }
+
+  isTypeText() {
+    this.inputType = 'text';
+  }
+
+  isTypePassword() {
+    this.inputType = 'password';
+  }
+
+  valueBlue() {
+    this.inputText = 'Azul';
+  }
+
+  valueRed() {
+    this.inputText = 'Vermelho';
+  }
 }
