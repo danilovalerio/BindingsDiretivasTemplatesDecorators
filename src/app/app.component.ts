@@ -38,7 +38,9 @@ export class AppComponent {
     this.inputText = 'Vermelho';
   }
 
-  handleInputKeyup(event: any) {
-    console.log(event);
+  handleInputKeyup(event: KeyboardEvent) {
+    //tipagem com a interface do elemento html
+    const currentText = event.target as HTMLInputElement;
+    console.log(currentText.value);
   }
 }
