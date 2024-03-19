@@ -1,3 +1,16 @@
 <h3>CSS CLASS BINDING</h3>
-<button [class.red-button]="true">BTN VERMELHO</button>
-<button [class.green-button]="true">BTN VERDE</button>
+<button [class.red-button]="isRedButton" (click)="isGreen = false">
+  BTN VERMELHO
+</button>
+<button [class.green-button]="true" (click)="isGreen = true">BTN VERDE</button>
+<br />
+<!-- Modo mais usado -->
+<button
+  [class]="{
+  'red-button': !isGreen,
+  'green-button': isGreen,
+}"
+>
+  OBJETO
+</button>
+<br />
