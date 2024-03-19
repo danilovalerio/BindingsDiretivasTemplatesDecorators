@@ -13,4 +13,28 @@ export class AttributeBindingComponent {
     this.btnTitle = 'Titulo Mudou';
     this.buttonDisable = !this.buttonDisable;
   }
+
+  widthBtn = '115px';
+  widthBtnDois = '130';
+
+  stylesObj = {
+    width: '160px',
+    backgroundColor: 'gray',
+  };
+
+  updateStylesObj() {
+    this.stylesObj.width = '170px';
+    this.stylesObj.backgroundColor = 'lightblue';
+  }
+
+  updateStylesObjCorreto() {
+    this.stylesObj = {
+      width: '170px',
+      backgroundColor: 'lightblue',
+    };
+  }
+
+  updateWidthBtnDois() {
+    this.widthBtnDois = '180';
+  }
 }

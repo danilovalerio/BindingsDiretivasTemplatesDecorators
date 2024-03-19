@@ -1,5 +1,29 @@
 <button [attr.title]="btnTitle">BINDING TESTE</button>
-
+<br />
 <button [attr.disabled]="buttonDisable ? true : null">Disabled</button>
-
+<br />
 <button (click)="onBtnClick()">Altera Binding Teste</button>
+<br />
+<button style="width: 100px; background-color: aqua">Botão Zero</button>
+<br />
+<button [style.width]="widthBtn">Botão Um</button>
+<br />
+<button [style.width.px]="widthBtnDois">Botão Dois</button>
+<br />
+<button [style]="'width: 140px; background-color: red;'">Botão Três</button>
+
+<br />
+<button [style]="{ width: '140px', 'background-color': 'yellow' }">
+  Botão Quatro
+</button>
+
+<hr />
+<button [style]="stylesObj">Botão Cinco</button>
+<br />
+<button (click)="updateStylesObj()">Atualizar Obj</button>
+<br />
+<button (click)="updateStylesObjCorreto()">Atualizar Obj OK</button>
+<hr />
+<br />
+<button (click)="updateWidthBtnDois()">Atualizar Width Botão Dois</button>
+<hr />
